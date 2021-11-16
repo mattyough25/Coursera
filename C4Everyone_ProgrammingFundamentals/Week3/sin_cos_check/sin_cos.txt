@@ -1,0 +1,33 @@
+/*
+Print Sine and Cosine Between 0 and 1
+November 15, 2021
+*/
+
+#include <stdio.h> // include standard library
+#include <math.h> // include math library
+
+int main(void)
+{
+	double interval;
+	int k;
+	int i; 				// declare variables
+
+	printf("\nValues of Sine (in radians) from 0-1:\n"); // Introduce sine computations
+	
+	for(i = 0; i <11; i++)
+	{
+		interval = i/10.0; // set interval from 0-1
+		printf("sin( %lf ) = %lf \t", interval, sin(interval)); // print sin value between 0 and 1
+	}
+
+	printf("\nValues of Cosine (in radians) from 0-1:\n"); // Introduce cosine computations
+
+	for(k = 0; k <11; k++)
+	{
+		interval = k/10.0; // set interval from 0-1
+		printf("cos( %lf ) = %lf \t", interval, cos(interval)); // print cos value between 0 and 1
+	}
+
+	printf("\n++++++++++++++\n"); // indicate end of sin-cos tables 
+	return 0;
+}
