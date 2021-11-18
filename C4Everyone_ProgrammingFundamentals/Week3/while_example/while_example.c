@@ -17,5 +17,6 @@ int main(void)
 		repeat--;
 	};
 	printf(" much.\n\n");
+	system("pause");
 	return 0;
 };
