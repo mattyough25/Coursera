@@ -41,8 +41,10 @@ void merge(int a[], int b[], int c[], int how_many_a, int how_many_b)
 void mergesort( int key[], int how_many_a, int how_many_b) // a power of 2
 {
 	int j, k;
+
 	int *w = (int*) malloc (how_many_a * sizeof(int));
-	// int w[how_many_a];
+	free(w);
+	// int w[how_many_a]; The previous two lines is how you accomplish this line without an error
 
 	for (k = 1; k < how_many_a; k *= 2)
 	{
