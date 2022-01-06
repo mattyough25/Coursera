@@ -1,0 +1,36 @@
+// Swap Function C++
+// Matthew Yough
+// 20 December 2021
+
+#include <iostream>
+using namespace std;
+
+inline void swap(int& i, int& j)
+{
+	int temp = i;
+	i = j;
+	j = temp;
+}
+
+inline void swap(double& i, double& j)
+{
+	double temp = i;
+	i = j;
+	j = temp;
+}
+
+int main()
+{
+	int m = 5, n = 10;
+	double x = 5.3, y = 10.6;
+
+	cout << "int inputs:" << m << "," << n << endl;
+	swap(m,n);
+	cout << "int outputs:" << m << "," << n << endl;
+
+	cout << "double inputs:" << x << "," << y << endl;
+	swap(x,y);
+	cout << "double outputs:" << x << "," << y << endl;
+
+	system("pause");
+}
