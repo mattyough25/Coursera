@@ -1,0 +1,17 @@
+// Output for 20% weight of Dijkstra
+// shortest path algorithm
+
+C:\Users\mgy0003\Documents\GitHub\Coursera\C++ForCProgrammers_PartA\Week3\Dijkstra_hw>a
+Enter Graph Size
+50
+Enter Graph Density
+0.2
+Enter Minimum Cost from Vertex to Vertex
+1
+Enter Maximum Cost from Vertex to Vertex
+10
+Output with 0.2 density:
+Graph Size: 50; Edge Number: 452
+Number of vertices not connected to vertex 0 is: 0
+Average shortest path from vertex 0 is: 4.19127
+Press any key to continue . . .

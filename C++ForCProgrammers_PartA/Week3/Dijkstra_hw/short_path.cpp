@@ -12,8 +12,7 @@ class Graph {
     int numE; // The number of edges in the graph
     vector<E> * G; // The adjacent matrix of graph
   public:
-    Graph(int size, double density, double dist_min,
-        double dist_max); // ctor for Graph
+    Graph(int size, double density, double dist_min, double dist_max); // ctor for Graph
     ~Graph(void); // dtor for Graph
     int size(void); // Getter for number of vertices in graph
     int numEdges(void); // Getter for number of edges in graph
@@ -23,7 +22,7 @@ class Graph {
 
 const double INF = numeric_limits<double>::infinity(); // infinite value
 
-// returns a random double between 0 and 1 used as a probabilty
+// Returns a random double between 0 and 1 used as a probabilty
 inline double prob(void) {
   random_device rd; // used as random seed
   static mt19937 rng; // create random generator
@@ -36,8 +35,7 @@ inline double prob(void) {
 // density: density of edges in the graph
 // dist_min: mininum cost of an edge
 // dist_max: maximum cost of an edge
-Graph::Graph(int size, double density, double dist_min,
-    double dist_max) : numV(size) {
+Graph::Graph(int size, double density, double dist_min, double dist_max) : numV(size) {
   random_device rd; // used as a random seed
   mt19937 rng; // create random number generator
   rng.seed(rd()); // feed the seed into the rng
@@ -66,29 +64,29 @@ void Graph::addEdge(int source, int target, double cost) {
   numE++;
 }
 
-// deallocate the graph
+// Deallocate the graph
 Graph::~Graph(void) {
   vector<E>().swap(*G); // swap out with an empty vector, deallocating memory
 }
 
-// returns the number of vertices in the graph
+// Returns the number of vertices in the graph
 int Graph::size(void) {
   return numV;
 }
 
-// returns the number of edges in the graph
+// Returns the number of edges in the graph
 int Graph::numEdges(void) {
   return numE;
 }
 
-// returns the average of the shortest path from the source vertex to every
-// other vertex of the graph. Ignores vertices that are not connected to the
-// source vertex
+// Returns the average of the shortest path from the source vertex to every
+// other vertex of the graph. 
+// Ignores vertices that are not connected to the source vertex
 void Graph::averageShortestPath(int source) {
   // minHeap priority_queue for storing closed vertices
   priority_queue<E, vector<E>, greater<E>> minHeap;
 
-  // stores distances of vertices from the source
+  // Stores distances of vertices from the source
   vector<double> dist(numV, INF);
   dist[source] = 0; // set source dist as 0 since it is itself
   minHeap.push({0, source}); // start with the source vertex
@@ -108,8 +106,7 @@ void Graph::averageShortestPath(int source) {
     }
   }
 
-  // get the average by summing up the distances while excluding those that are
-  // not connceted
+  // Get the average by summing up the distances while excluding those that are not connected
   double avg = 0.0;
   int notConnected = 0;
   for(double d : dist) {
@@ -119,7 +116,7 @@ void Graph::averageShortestPath(int source) {
     }
     avg += d;
   }
-  cout << "# of vertices not connected to vertex " << source << " is: " << notConnected << endl;
+  cout << "Number of vertices not connected to vertex " << source << " is: " << notConnected << endl;
   avg /= (numV - notConnected - 1);
 
   // report the avg shortest path
@@ -127,8 +124,7 @@ void Graph::averageShortestPath(int source) {
     " is: " << avg << endl;
 }
 
-// The driver of this program, creates a new graph and calls the method that
-// gets average shortest path from the first vertex.
+// Main function driver
 int main(void) {
 
    int size = 0;
@@ -148,7 +144,7 @@ int main(void) {
 
   cout << "Output with " << density << " density:" << endl;
   Graph graph = Graph(size, density, cost_min, cost_max);
-  cout << "size: " << graph.size() << "; edges: " << graph.numEdges() << endl;
+  cout << "Graph Size: " << graph.size() << "; Edge Number: " << graph.numEdges() << endl;
   graph.averageShortestPath(0);
 
   system("pause");
