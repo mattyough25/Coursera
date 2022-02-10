@@ -1,9 +1,3 @@
-// The Game of Hex
-// 01 February 2022
-// This code is an implimentation of the Game of Hex where 
-// a user will play against a computer player on a board
-// between the sizes of 5x5 and 11x11
-
 #include <ctime>
 #include <cstdlib>
 #include <iostream>
