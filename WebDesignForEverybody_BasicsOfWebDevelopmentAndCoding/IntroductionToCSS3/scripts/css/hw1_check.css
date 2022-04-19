@@ -1,0 +1,129 @@
+body{
+    margin:10px;
+    padding:10px ;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+header{
+    background-color: #808080;
+    background-image: url(../Imgs/flywheel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 120%;
+}
+
+nav{
+    text-align: center;
+    padding: 40px;
+}
+
+nav a{
+    width: 220px;
+    margin: 0 80px 30px 0px ;
+    padding:15px;
+    display: inline-block;
+    border: 1px solid rgba(250, 244, 244, 0);
+    border-radius:5%;
+    background: rgba(250, 244, 244, 0.2);
+    text-decoration:none;
+}
+
+.active{
+    background-color: #fff;
+}
+
+
+.left{
+    background: #5e6d2a;
+    float: left;
+    width:18%;
+}
+
+.right{
+    float:left;
+    width:70%;
+    margin:1px; 
+}
+
+img{
+    border:1px solid #000;
+    display:block;
+    margin: 20px auto;
+    width:80%;
+}
+
+table {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 110%;
+    font-weight: bolder;
+    width:75%;
+    margin-left:20%; 
+    line-height: 10px;
+}
+
+table *{
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+tr{
+    opacity: .7;
+}
+
+tr ~ tr:hover{
+    opacity: 1;
+}
+
+th{
+    background-color: #6c8512;
+    background-image: linear-gradient(to bottom,#c1f86f,#856112);
+    -o-background-image: linear-gradient(to bottom,#c1f86f,#856112);
+    -ms-background-image: linear-gradient(to bottom,#c1f86f,#856112);
+    -moz-background-image: linear-gradient(to bottom,#c1f86f,#856112);
+    -webkit-background-image: linear-gradient(to bottom,#c1f86f,#856112);
+    border-top: 2px;
+    border-right: 2px;
+    border-bottom: 5px;
+    border-left: 2px;
+    border-style: solid;
+    border-color: #c1f86f;
+    border-radius: 7% 7% 0 0;
+    color:#fff;
+}
+
+
+th:first-child{
+    text-align: left;
+}
+
+
+th:nth-child( 1n + 2){
+    text-align:center;
+} 
+
+
+td{
+    padding: 10px;
+    opacity: .8;
+    background-color: #b8eeab;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    text-shadow: #000 1px 1px 5px;
+} 
+
+td:first-child{
+    text-align: left;
+}
+
+td:nth-child(1n + 2){
+    text-align:center;
+}
