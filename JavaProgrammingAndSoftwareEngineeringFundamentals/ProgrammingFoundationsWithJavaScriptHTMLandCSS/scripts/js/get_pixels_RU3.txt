@@ -1,0 +1,13 @@
+// write your code here
+function numberPixels(namefile) {
+var someImg = new SimpleImage(namefile);
+var height = someImg.getHeight();
+var width = someImg.getWidth();
+
+var pixel = height*width;
+return pixel
+}
+var result = numberPixels("chapel.png");
+print(result);
+result = numberPixels("dinos.png");
+print(result);

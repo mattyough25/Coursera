@@ -1,0 +1,8 @@
+// write your code here
+var x = 3;
+var y = 2;
+y = x;
+print (x);
+print (y);
+
+var image = new SimpleImage("chapel.png");

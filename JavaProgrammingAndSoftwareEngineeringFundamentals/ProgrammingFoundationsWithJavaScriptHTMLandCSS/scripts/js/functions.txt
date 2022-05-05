@@ -1,0 +1,8 @@
+// write your code here
+function square(x){
+	var ans = x*x;
+	return ans;
+}
+
+var y = square(4);
+print(y)
