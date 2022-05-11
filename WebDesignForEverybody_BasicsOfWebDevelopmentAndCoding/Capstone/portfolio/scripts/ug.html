@@ -3,8 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Matthew Yough Portfolio</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/button_div.css">
-	<script src = "js/button_div.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    </style>
 </head>
 
 <header> 
@@ -33,8 +43,41 @@
 		Hello. My name is Matthew Yough and this is my professional portfolio. You will find my academic and work history over that passed 7 years. You can access all parts of the site by following the navigation bar above. I would love to do business, talk about employment, or share my expertise to anybody who wishes to talk with me. For this reason, I have provided a form where you can fill out your name, email, phone number, and a couple days of the week where you are most free so that I can reach out to you and schedule a meeting. I have also provided my google calendar so you can see which times best suit my schedule. I hope you find this website very helpful and informative!
 	</div>
 
+	<!--Embedded Google Maps-->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2959.0291374828253!2d-80.088936485246!3d42.12825945770231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882d7fe4c92d3d4b%3A0x78edc4de1144c4bf!2sGannon%20University!5e0!3m2!1sen!2sus!4v1652281148799!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-	
+
+	<!--Carousel of images -->
+	<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="la.jpg" alt="Los Angeles" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="ny.jpg" alt="New York" width="1100" height="500">
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
 
 
 
