@@ -1,0 +1,12 @@
+.header{
+	width: 100vw;
+	opacity: 0.3;
+}
+
+.text{
+	position: absolute;
+	top: 8px;
+    left: 16px;
+    font-size: 3vw;
+    font-weight: bold;
+}
