@@ -1,5 +1,24 @@
-.header{
+.ix_header{
 	width: 100vw;
+	height: 25vw;
+	opacity: 0.3;
+}
+
+.ug_header{
+	width: 100vw;
+	height: 20vw;
+	opacity: 0.3;
+}
+
+.g_header{
+	width: 100vw;
+	height: 20vw;
+	opacity: 0.3;
+}
+
+.e_header{
+	width: 100vw;
+	height: 20vw;
 	opacity: 0.3;
 }
 
