@@ -18,6 +18,21 @@ public class Strings3 {
         }
     }
     
+    public String lastPart(String stringa, String stringb){
+        int first = stringb.indexOf(stringa);
+        
+        if(first == -1){
+            return stringb;
+        }
+        else{
+            int len = stringb.length();
+            String last = stringb.substring(first + 1,len);
+        
+            return last;
+        }
+        
+    }
+    
     public void testing(){
         String testa = "l";
         String testb = "Hello";
@@ -37,5 +52,16 @@ public class Strings3 {
         out = twoOccurrences(testa,testb);
         System.out.println(out);
         
+        testa = "H";
+        testb = "Hello";
+        System.out.println("String is " + testb + " Finding " + testa);
+        out = lastPart(testa,testb);
+        System.out.println("Last Part: " + out);
+        
+        testa = "x";
+        testb = "Hello";
+        System.out.println("String is " + testb + " Finding " + testa);
+        out = lastPart(testa,testb);
+        System.out.println("Last Part: " + out);
     }
 }
