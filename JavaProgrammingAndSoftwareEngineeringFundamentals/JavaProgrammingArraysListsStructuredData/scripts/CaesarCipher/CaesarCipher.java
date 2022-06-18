@@ -18,23 +18,31 @@ public class CaesarCipher {
         
         for (int i=0; i < encrypted.length(); i++){
             char currChar = encrypted.charAt(i);
+            
+            // Account for lowercase letters
+            if(Character.isLowerCase(currChar) == true){
+                String lowerAlphabet = alphabet.toLowerCase();
+                String lowerShiftedAlphabet = shiftedAlphabet.toLowerCase();
+                System.out.println(lowerAlphabet);
+                int idx = lowerAlphabet.indexOf(currChar);
+                
+                // If currChar is in the alphabet
+                if(idx != -1){
+                    char newChar = lowerShiftedAlphabet.charAt(idx);
+                    encrypted.setCharAt(i, newChar);
+                }            
+            }
+            
             int idx = alphabet.indexOf(currChar);
+                
             // If currChar is in the alphabet
             if(idx != -1){
-             char newChar = shiftedAlphabet.charAt(idx);
-             encrypted.setCharAt(i, newChar);
+            char newChar = shiftedAlphabet.charAt(idx);
+            encrypted.setCharAt(i, newChar);
             }            
+
         }
         return encrypted.toString();
     }
     
-    public void testCaesar(){
-        int key = 17;
-        FileResource fr = new FileResource();
-        String message = fr.asString();
-        String encrypted = encrypt(message, key);
-        System.out.println(encrypted);
-        String decrypted = encrypt(encrypted, 26-key);
-        System.out.println(decrypted);
-    }
 }
