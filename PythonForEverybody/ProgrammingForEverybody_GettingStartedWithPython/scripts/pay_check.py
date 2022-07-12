@@ -4,7 +4,6 @@ Created on Wed Mar  2 11:26:26 2022
 
 @author: mgy0003
 """
-
 # This script calculates a workers pay
 
 hrs  = input("Enter Hours:")
