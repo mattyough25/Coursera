@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="points <= 103.5\nfriedman_mse = 0.0\nsamples = 16975\nvalue = 0.001", fillcolor="#ffffff"] ;
+1 [label="points <= 92.5\nfriedman_mse = 0.0\nsamples = 16953\nvalue = 0.001", fillcolor="#ffffff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="wins <= 40.5\nfriedman_mse = 0.0\nsamples = 16912\nvalue = 0.0", fillcolor="#ffffff"] ;
+1 -> 2 ;
+3 [label="friedman_mse = 0.0\nsamples = 16884\nvalue = 0.0", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="friedman_mse = 0.008\nsamples = 28\nvalue = 0.064", fillcolor="#f9e4d5"] ;
+2 -> 4 ;
+5 [label="evenTimeOnIcePerGame <= 958.0\nfriedman_mse = 0.012\nsamples = 41\nvalue = 0.079", fillcolor="#f8decc"] ;
+1 -> 5 ;
+6 [label="friedman_mse = 0.005\nsamples = 29\nvalue = 0.035", fillcolor="#fcf0e8"] ;
+5 -> 6 ;
+7 [label="friedman_mse = 0.013\nsamples = 12\nvalue = 0.185", fillcolor="#efb287"] ;
+5 -> 7 ;
+8 [label="shortHandedPoints <= 2.5\nfriedman_mse = 0.014\nsamples = 22\nvalue = 0.242", fillcolor="#ea9a61"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="goals <= 25.5\nfriedman_mse = 0.007\nsamples = 17\nvalue = 0.289", fillcolor="#e68742"] ;
+8 -> 9 ;
+10 [label="friedman_mse = 0.0\nsamples = 1\nvalue = 0.062", fillcolor="#fae5d7"] ;
+9 -> 10 ;
+11 [label="friedman_mse = 0.004\nsamples = 16\nvalue = 0.303", fillcolor="#e58139"] ;
+9 -> 11 ;
+12 [label="points <= 108.5\nfriedman_mse = 0.005\nsamples = 5\nvalue = 0.082", fillcolor="#f8ddc9"] ;
+8 -> 12 ;
+13 [label="friedman_mse = 0.001\nsamples = 4\nvalue = 0.05", fillcolor="#fbeade"] ;
+12 -> 13 ;
+14 [label="friedman_mse = 0.0\nsamples = 1\nvalue = 0.211", fillcolor="#eda775"] ;
+12 -> 14 ;
+}
